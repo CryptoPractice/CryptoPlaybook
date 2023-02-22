@@ -1,9 +1,9 @@
 from Crypto.Cipher import DES
 from Crypto.Util.Padding  import pad
 
-flag = b'CryptoCSG{4his_k3y_15_s0_w34k}'
+flag = b'CryptoCSG{###########}'
 flag = pad(flag,8)
-key = b'\xE0'*4+b'\xF1'*4       
+key = ###########   
 
 
 cipher = DES.new(key, DES.MODE_ECB)
