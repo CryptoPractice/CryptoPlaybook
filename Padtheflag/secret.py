@@ -1,0 +1,1 @@
+FLAG=b"STF22{p@dd1ng_pr0b13m_3v3rywh3r3}"
