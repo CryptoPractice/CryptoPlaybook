@@ -25,9 +25,8 @@ Firewall Rules
 -
 
 Docker
+-
 Docker is used to build, setup and copied the related files to a python docker container which running a tcp port 9000.
 
 sudo docker build -t padtheflag .
 sudo docker run -d --rm --name padtheflag -p 9000:9000 padtheflag:latest 
-Other
--
