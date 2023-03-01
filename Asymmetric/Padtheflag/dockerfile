@@ -1,0 +1,5 @@
+FROM alpine:latest
+COPY . /padtheflag
+WORKDIR /padtheflag
+RUN apk add --no-cache python3 && apk add py3-pip && pip install -r requirements.txt
+CMD ["python3", "/padtheflag/source.py"]
