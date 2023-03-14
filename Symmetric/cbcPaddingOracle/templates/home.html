@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{%block content%}
+{% from "includes/_formhelper.html" import render_field %}
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <form autocomplete="off" method="POST" action="{{url_for('index')}}">
+      <div class="form-group ">
+        {{ render_field(form.Name, class="form-control") }}
+      </div>
+    <input type="submit" value="Register" class="btn btn-primary"/>
+    </form>
+</div>
+
+{% endblock %}
