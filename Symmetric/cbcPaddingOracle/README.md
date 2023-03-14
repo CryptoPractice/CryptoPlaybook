@@ -6,6 +6,9 @@ The CBC padding oracle vulnerability has been made known for some times but can 
 It is easily overlooked when developers implement the padding algorithm or utilize the cryptographic functions.
 This challenge demonstrated even a secure cryptosystem can be broken easily due to insecure implementation on PKCS#7 padding.
 
+## Setup Instruction
+1. pip install -r requirements.txt
+2. python cbcPaddingOracle.py
 
 ## Writeup and Analysis
 
@@ -41,7 +44,7 @@ This challenge demonstrated even a secure cryptosystem can be broken easily due 
          except:
              return "Invalid JSON Format!"    
  ```
- By looking at the code snippets as shown above, the server is returning different response when there is an invalid padding (Decryption Failed!) compare to a valid padding (Invalid JSON Format!)
+ By looking at the code snippets of cbcPaddingOracle.py as shown above, the server is returning different response when there is an invalid padding (Decryption Failed!) compare to a valid padding (Invalid JSON Format!)
  Hence, attacker is able to make use of this side channel information to perform the padding oracle attack.
  
  As a mitigation, the developer should ensure the code always return the same response when decrypting packets for either valid or invalid padding.
