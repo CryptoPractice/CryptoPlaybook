@@ -1,0 +1,36 @@
+{
+  "name": "encryptdle-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "@primer/css": "^20.7.1",
+    "@vueuse/core": "^9.6.0",
+    "ohmyfetch": "^0.4.21",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "eslint": "^8.28.0",
+    "eslint-plugin-vue": "^9.8.0",
+    "sass": "^1.56.1",
+    "vite": "^3.2.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:vue/vue3-recommended"
+    ],
+    "rules": {
+      "curly": "error",
+      "brace-style": "error",
+      "space-before-function-paren": [
+        "error",
+        "always"
+      ]
+    }
+  }
+}
