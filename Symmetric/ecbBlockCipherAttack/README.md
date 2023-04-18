@@ -8,7 +8,7 @@ able to recover the unknown ciphertext.
 
 ## Setup Instruction
 1. pip install -r requirements.txt
-2. python cbcPaddingOracle.py
+2. python server.py
 
 ## Writeup
 
